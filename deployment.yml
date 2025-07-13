@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hmb-deployment
+  labels:
+    app: hmb
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hmb
+  template:
+    metadata:
+      labels:
+        app: hmb
+    spec:
+      containers:
+      - name: hmb
+        image: apurvahallur/flask-mongo-python:v1
+        ports:
+        - containerPort: 5000
