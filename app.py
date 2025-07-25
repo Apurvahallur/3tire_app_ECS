@@ -13,7 +13,7 @@ app.secret_key = "super-secret-key"
 
 DATABASE_FILE = "database.txt"
 
-uri = "mongodb+srv://apurvahallur:nhuf6GfqnLDwvJBJ@aksh.ufoepdy.mongodb.net/?retryWrites=true&w=majority&appName=AKSH"
+uri = "mongodb+srv://<username>:<password>@aksh.ufoepdy.mongodb.net/?retryWrites=true&w=majority&appName=AKSH"
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
